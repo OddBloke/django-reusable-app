@@ -11,3 +11,11 @@ INSTALLED_APPS = (
 
 
 SECRET_KEY = 'abcde12345'
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'reusable-test',
+    }
+}
